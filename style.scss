@@ -1,0 +1,11 @@
+body {
+  background-color: #000;
+  color: #fff;
+  font-family: 'Mulish', sans-serif;
+}
+
+// components
+@import "src/scss/components/button";
+
+// partials
+@import "src/scss/partials/home";
