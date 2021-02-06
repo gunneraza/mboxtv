@@ -1,0 +1,11 @@
+.genres {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-around;
+  justify-content: space-around;
+  height: 520px;
+
+  .genre {
+    width: 24%;
+  }
+}
