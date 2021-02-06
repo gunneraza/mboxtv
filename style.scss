@@ -5,8 +5,11 @@ body {
 }
 
 // components
-@import "src/scss/components/button";
+@import 'src/scss/components/section';
+@import 'src/scss/components/button';
+@import 'src/scss/components/title';
+@import 'src/scss/components/movie-list';
 
 // partials
-@import "src/scss/partials/header";
-@import "src/scss/partials/home";
+@import 'src/scss/partials/header';
+@import 'src/scss/partials/home';

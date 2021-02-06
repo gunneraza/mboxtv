@@ -1,0 +1,37 @@
+.movie-list {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+
+  &__item {
+    width: 300px;
+    overflow: hidden;
+    border-radius: 14px;
+  }
+
+  &__button {
+    position: absolute;
+    top: 50%;
+    right: 0px;
+    z-index: 99;
+    fill: #fff;
+    width: 30px;
+    height: 50px;
+    cursor: pointer;
+  }
+}
+
+.section-slider {
+  position: relative;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  padding-right: 40px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

@@ -4,3 +4,4 @@ import 'tailwindcss/utilities.css'
 
 import './style.scss'
 
+import './src/js/index'

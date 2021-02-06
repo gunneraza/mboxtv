@@ -1,0 +1,32 @@
+.title {
+  font-size: 28px;
+  line-height: 20px;
+  display: inline-block;
+  position: relative;
+  margin-left: 28px;
+
+  h3 {
+    position: relative;
+    &:after {
+      display: block;
+      clear: both;
+      content: '';
+      width: 8px;
+      height: 38px;
+      background: linear-gradient(316.53deg, #26FFF2 13.2%, #326CFF 71.54%);
+      border-radius: 50px;
+      position: absolute;
+      left: -20px;
+      top: -50%;
+    }
+  }
+
+  svg {
+    fill: #fff;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    right: -30px;
+    top: 2px;
+  }
+}
