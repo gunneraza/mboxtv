@@ -9,12 +9,20 @@ Swiper.use(Navigation)
 
 slider({
     url: 'https://api.themoviedb.org/3/movie/popular',
-    wrapper: '.movie-list__wrapper',
+    wrapper: '.slider__wrapper',
     slider: '.movie-slider'
 })
 
 slider({
     url: 'https://api.themoviedb.org/3/tv/popular',
-    wrapper: '.movie-list__wrapper',
+    wrapper: '.slider__wrapper',
     slider: '.tv-slider'
+})
+
+window.addEventListener('DOMContentLoaded', event => {
+    const chanelSlider = new Swiper('.channels-slider', {
+        loop: true,
+        slidesPerView: 5,
+
+    })
 })

@@ -15,8 +15,8 @@ function slider(params) {
         let movies = response.data.results
         movies.forEach(movie => {
             movieList.innerHTML += `
-                <div class="swiper-slide movies-list__slide">
-                    <div class="movie-list__item">
+                <div class="swiper-slide slider__slide">
+                    <div class="slider__item">
                         <img src="${'https://image.tmdb.org/t/p/w500/'+ movie.poster_path}" alt="${movie.original_title}">
                     </div>
                 </div>
@@ -28,7 +28,7 @@ function slider(params) {
             slidesPerView: 6,
             spaceBetween: 4,
             navigation: {
-                nextEl: '.movie-list__button'
+                nextEl: '.slider__button'
             }
         })
     })
