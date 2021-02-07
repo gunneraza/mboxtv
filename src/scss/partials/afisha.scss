@@ -1,0 +1,14 @@
+.afisha {
+  border-radius: 20px;
+  overflow: hidden;
+  width: 100%;
+  height: 400px;
+  display: flex;
+
+  &__item {
+    width: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+  }
+}
