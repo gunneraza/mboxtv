@@ -23,6 +23,16 @@ window.addEventListener('DOMContentLoaded', event => {
     const chanelSlider = new Swiper('.channels-slider', {
         loop: true,
         slidesPerView: 5,
+        navigation: {
+            nextEl: '.slider__button'
+        }
+    })
 
+    const actorsSlider = new Swiper('.actors-slider', {
+        loop: true,
+        slidesPerView: 6,
+        navigation: {
+            nextEl: '.slider__button'
+        }
     })
 })
