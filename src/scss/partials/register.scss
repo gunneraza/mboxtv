@@ -1,0 +1,22 @@
+.register {
+  display: flex;
+  justify-content: center;
+
+  &__wrapper {
+    padding: 70px 50px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 80%;
+    border-radius: 50px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+  }
+
+  &__title {
+    font-size: 64px;
+    width: 80%;
+    font-weight: 700;
+  }
+}
