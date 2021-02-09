@@ -1,0 +1,49 @@
+.footer {
+  background-color: #101012;
+
+  &__links {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+
+    li {
+      margin-bottom: 14px;
+
+      a {
+        transition: 200ms ease;
+        color: #c2c2c2;
+        &:hover {
+          color: #fff;
+        }
+      }
+    }
+  }
+
+  &__link {
+    font-size: 18px;
+    line-height: 20px;
+  }
+
+  .socials {
+    display: flex;
+
+    &__item {
+      margin-right: 14px;
+      svg {
+        width: 22px;
+        height: 22px;
+        fill: #fff;
+      }
+    }
+  }
+}
+
+footer {
+  display: flex;
+  justify-content: space-around;
+  padding: 70px 0px;
+}
