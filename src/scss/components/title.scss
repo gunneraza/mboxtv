@@ -5,6 +5,10 @@
   position: relative;
   margin-left: 28px;
 
+  @media (max-width: 576px) {
+    margin-left: 40px;
+  }
+
   h3 {
     position: relative;
     &:after {

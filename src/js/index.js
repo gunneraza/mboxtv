@@ -22,17 +22,46 @@ slider({
 window.addEventListener('DOMContentLoaded', event => {
     const chanelSlider = new Swiper('.channels-slider', {
         loop: true,
-        slidesPerView: 5,
         navigation: {
             nextEl: '.slider__button'
+        },
+        breakpoints: {
+            640: {
+                slidesPerView: 2
+            },
+
+            768: {
+                slidesPerView: 4
+            },
+
+            1024: {
+                slidesPerView: 5
+            }
         }
     })
 
     const actorsSlider = new Swiper('.actors-slider', {
         loop: true,
-        slidesPerView: 6,
+        slidesPerView: 1,
         navigation: {
             nextEl: '.slider__button'
+        },
+        breakpoints: {
+            640: {
+                slidesPerView: 2
+            },
+
+            768: {
+                slidesPerView: 3
+            },
+
+            1024: {
+                slidesPerView: 4
+            },
+
+            1200: {
+                slidesPerView: 5
+            }
         }
     })
 })

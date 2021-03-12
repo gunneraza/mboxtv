@@ -25,8 +25,21 @@ function slider(params) {
 
         new Swiper(slider, {
             loop: true,
-            slidesPerView: 6,
             spaceBetween: 4,
+            breakpoints: {
+                1500: {
+                    slidesPerView: 6
+                },
+                1200: {
+                    slidesPerView: 5
+                },
+                768: {
+                    slidesPerView: 3
+                },
+                576: {
+                    slidesPerView: 2
+                }
+            },
             navigation: {
                 nextEl: '.slider__button'
             }

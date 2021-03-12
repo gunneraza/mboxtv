@@ -10,8 +10,19 @@
   align-items: center;
   justify-content: space-between;
 
+  &__navigation {
+    @media (max-width: 768px) {
+      width: 100%;
+    }
+  }
+
   .nav {
     display: flex;
+
+    @media (max-width: 768px) {
+      justify-content: center;
+      padding: 10px;
+    }
 
     &__item {
       margin-right: 50px;
@@ -22,6 +33,14 @@
 
       &:hover {
         opacity: 1;
+      }
+
+      &:last-child {
+        margin-right: 0px;
+      }
+
+      @media(max-width: 1024px) {
+
       }
     }
 
@@ -41,8 +60,18 @@
     }
   }
 
+  .logo {
+    @media(max-width: 768px) {
+      display: none;
+    }
+  }
+
   &__actions {
     display: flex;
+
+    @media(max-width: 768px) {
+      display: none;
+    }
   }
 
   &__action {
@@ -56,6 +85,10 @@
 
     &:last-child {
       margin-right: 0px;
+    }
+
+    @media(max-width: 1024px) {
+      margin-right: 30px;
     }
   }
 
