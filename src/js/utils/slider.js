@@ -17,7 +17,7 @@ function slider(params) {
             movieList.innerHTML += `
                 <div class="swiper-slide slider__slide">
                     <div class="slider__item">
-                        <img src="${'https://image.tmdb.org/t/p/w500/'+ movie.poster_path}" alt="${movie.original_title}">
+                        <img class="swiper-lazy" data-src="${'https://image.tmdb.org/t/p/w500/'+ movie.poster_path}" alt="${movie.original_title}">
                     </div>
                 </div>
             `
@@ -26,6 +26,8 @@ function slider(params) {
         new Swiper(slider, {
             loop: true,
             spaceBetween: 4,
+            preloadImages: false,
+            lazy: true,
             breakpoints: {
                 1500: {
                     slidesPerView: 6

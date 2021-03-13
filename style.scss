@@ -4,15 +4,6 @@ body {
   font-family: 'Mulish', sans-serif;
 }
 
-// components
-@import 'src/scss/components/section';
-@import 'src/scss/components/button';
-@import 'src/scss/components/title';
-@import 'src/scss/components/slider';
-@import 'src/scss/components/genre';
-@import 'src/scss/components/channel';
-@import 'src/scss/components/actor';
-
 // partials
 @import 'src/scss/partials/header';
 @import 'src/scss/partials/home';
@@ -22,3 +13,12 @@ body {
 @import 'src/scss/partials/afisha';
 @import 'src/scss/partials/register';
 @import 'src/scss/partials/footer';
+
+// components
+@import 'src/scss/components/section';
+@import 'src/scss/components/button';
+@import 'src/scss/components/title';
+@import 'src/scss/components/slider';
+@import 'src/scss/components/genre';
+@import 'src/scss/components/channel';
+@import 'src/scss/components/actor';

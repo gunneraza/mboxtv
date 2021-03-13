@@ -2,10 +2,11 @@ import slider from './utils/slider'
 import 'swiper/swiper.min.css'
 import 'swiper/swiper-bundle.min.css'
 
-import Swiper, {Navigation} from "swiper";
+import Swiper, { Navigation, Lazy } from 'swiper'
+import lozad from 'lozad'
 
 
-Swiper.use(Navigation)
+Swiper.use([Navigation, Lazy])
 
 slider({
     url: 'https://api.themoviedb.org/3/movie/popular',
@@ -19,12 +20,23 @@ slider({
     slider: '.tv-slider'
 })
 
-window.addEventListener('DOMContentLoaded', event => {
-    const chanelSlider = new Swiper('.channels-slider', {
+function basicSwiperOptions() {
+    return {
         loop: true,
         navigation: {
             nextEl: '.slider__button'
         },
+        on: {
+            click: () => {
+                observer.observe()
+            }
+        },
+    }
+}
+
+window.addEventListener('DOMContentLoaded', event => {
+    new Swiper('.channels-slider', {
+        ...basicSwiperOptions(),
         breakpoints: {
             640: {
                 slidesPerView: 2
@@ -40,12 +52,9 @@ window.addEventListener('DOMContentLoaded', event => {
         }
     })
 
-    const actorsSlider = new Swiper('.actors-slider', {
-        loop: true,
+    new Swiper('.actors-slider', {
+        ...basicSwiperOptions(),
         slidesPerView: 1,
-        navigation: {
-            nextEl: '.slider__button'
-        },
         breakpoints: {
             640: {
                 slidesPerView: 2
@@ -65,3 +74,7 @@ window.addEventListener('DOMContentLoaded', event => {
         }
     })
 })
+
+
+const observer = lozad() // lazy loads elements with default selector as '.lozad'
+observer.observe()
